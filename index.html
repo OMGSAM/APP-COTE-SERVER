@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des Modules</title>
+</head>
+<body>
+    <h1>Gestion des Modules</h1>
+    <form method="POST" action="add_module.php">
+        <label for="num_module">Numéro Module :</label>
+        <input type="number" name="num_module" required><br>
+
+        <label for="nom_module">Nom Module :</label>
+        <input type="text" name="nom_module" required><br>
+
+        <label for="masse_horaire_prevue">Masse Horaire Prévue :</label>
+        <input type="number" name="masse_horaire_prevue" min="10" required><br>
+
+        <!-- Dropdown lists populated dynamically -->
+        <label for="num_prof_enseignant">Professeur Enseignant :</label>
+        <select name="num_prof_enseignant" required></select><br>
+
+        <label for="num_prof_responsable">Professeur Responsable :</label>
+        <select name="num_prof_responsable" required></select><br>
+
+        <label for="num_classe">Classe :</label>
+        <select name="num_classe" required></select><br>
+
+        <button type="submit">Ajouter Module</button>
+    </form>
+</body>
+</html>
